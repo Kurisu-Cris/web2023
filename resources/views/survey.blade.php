@@ -7,7 +7,7 @@
             <article id="encuesta">
                 @if (!empty($secciones))
                     @foreach ($secciones as $s)
-                        <div class="accordion accordion-flush" id="accordion-{{ $s->Clasificacion }}">
+                        <div  class="accordion accordion-flush" id="accordion-{{ $s->Clasificacion }}">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapse show" type="button" data-bs-toggle="collapse" data-bs-target="#flush-{{ $s->Clasificacion }}" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -28,23 +28,23 @@
                                                             Por favor, responda a la pregunta resaltada antes de continuar.
                                                         </div>
                                                         <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="ir{{ $p->Numero }}" value="5">
+                                                        <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="ir{{ $p->Numero }}" value="5">
                                                         <label class="form-check-label" for="ir{{ $p->Numero }}">Totalmente de acuerdo</label>
                                                         </div><br>
                                                         <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="ir{{ $p->Numero }}" value="4">
+                                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="ir{{ $p->Numero }}" value="4">
                                                             <label class="form-check-label" for="ir{{ $p->Numero }}">De acuerdo</label>
                                                         </div><br>
                                                         <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="ir{{ $p->Numero }}" value="3">
+                                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="ir{{ $p->Numero }}" value="3">
                                                             <label class="form-check-label" for="ir{{ $p->Numero }}">Indiferente</label>
                                                         </div><br>
                                                         <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="ir{{ $p->Numero }}" value="2">
+                                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="ir{{ $p->Numero }}" value="2">
                                                             <label class="form-check-label" for="ir{{ $p->Numero }}">En desacuerdo</label>
                                                         </div><br>
                                                         <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="ir{{ $p->Numero }}" value="1">
+                                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="ir{{ $p->Numero }}" value="1">
                                                             <label class="form-check-label" for="ir{{ $p->Numero }}">Totalmente en desacuerdo</label>
                                                         </div>
                                                     </form>
@@ -200,6 +200,7 @@
                     localStorage.removeItem("respuestas");
                     location.reload();
                 }
+
 
             </script>
 @endsection

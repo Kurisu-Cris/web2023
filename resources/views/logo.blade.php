@@ -5,7 +5,7 @@
 @section('content')
     <article class="contenedor">
         <svg width="200px" height="200px">
-        <polygon points="10,190 100,10 190,190"/>
+        <polygon points="100,10 190,70 150,150 50,150 10,70"/>
         </svg>
     </article>
 
@@ -22,7 +22,7 @@
         polygon{
             fill: transparent;
             stroke: 10;
-            stroke: rgb(42, 81, 165);
+            stroke: rgb(217, 91, 1);
             stroke-width: 4px;
             stroke-dasharray: 1560;
             stroke-dashoffset: 0;
@@ -48,7 +48,7 @@
             100%
             {
                 stroke-dashoffset: 3120;
-                fill: rgb(42, 81, 165);
+                fill: rgb(217, 91, 1);
             }
         }
     </style>
